@@ -1,0 +1,43 @@
+.nav-item {
+    &:hover{
+        border-bottom: $underLine solid $colorBackgroundNav;
+    }
+}
+
+.container-parraf {
+    text-align: center;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        font-style: un;
+    }
+}
+.row {
+    text-align: center;
+}
+
+.col-lg-3.col-md-6.col-sm-12, .col-lg-4.col-md-4.col-sm-12 {
+    padding: $paddingGr;
+}
+
+.img-fluid.rounded {
+    height: 350px;
+    width: 250px;
+}
+
+.card-body {
+    background-color: $colorBackgroundFooter;
+}
+
+.card-body.card-opinion {
+    background-color: $colorBackgroundFooter;
+    height: auto;
+}
+
+.btn {
+    background-color: $colorBackgroundBtn;
+    border-color: $colorBackgroundBtn;
+    &:hover{
+        background-color: $colorBackgroundFooter;
+        border-color: $colorBackgroundFooter;
+    }
+}

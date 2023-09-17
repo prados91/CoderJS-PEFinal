@@ -1,0 +1,21 @@
+.social {
+    margin: $marginXll;
+    p {
+        text-align: center;
+        font-size: $fontSizeGr_1;
+        margin-bottom: $marginXl;
+    }
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        margin: 0 $marginXll;
+        img {
+            font-size: 2rem;
+            width: 20px;
+        }
+    }
+}

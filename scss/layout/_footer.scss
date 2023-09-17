@@ -1,0 +1,22 @@
+.footer-links {
+    background-color: $colorBackgroundMain;
+    color: $colorText;
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            line-height: 2;
+            p {
+                font-size: $fontSizeGr_2;
+                padding: 5px;
+                margin: 0;
+            }
+            h4 {
+                margin-bottom: $marginGr;
+            }
+        }
+        @include tablet {
+            margin-top: $marginXll;
+        }
+    }
+}

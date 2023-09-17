@@ -1,0 +1,40 @@
+.formulario {
+    
+    padding: $paddingXll;
+    font-family: 'Gilda Display', serif;
+    h2 {
+        text-align: left;
+        font-size: $fontSizeXll;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: #C06E52;
+    }
+    input {
+        width: 100%;
+        font-size: $fontSizeGr_1;
+        background-color: transparent;
+        border: none;
+        border-bottom: $underLine solid $colorText;
+        padding: $paddingSm;
+    }
+    textarea {
+        width: 100%;
+        font-size: $fontSizeGr_1;
+        margin-top: $marginGr;
+        margin-bottom: $marginGr;
+        padding: $paddingGr;
+    }
+    .btn-send {
+        background-color: #C06E52;
+        color: $colorText;
+        border: $underLine solid $colorText;
+        padding: $paddingGr;
+        font-size: $fontSizeXl;
+    }
+}
+
+.iframe {
+    width: 100%;
+    height: 100%;
+    padding: $paddingXl;
+}

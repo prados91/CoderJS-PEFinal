@@ -1,0 +1,128 @@
+html, body {
+    font-family: $fontFamily;
+    background-color: $colorBackgroundMain;
+}
+
+main {
+    min-height: calc(100vh - $sizeHeader - $sizeFooter);
+}
+
+h2 {
+    text-align: center;
+    font-size: $fontSizeGr_1;
+    font-style: italic;
+}
+
+h3 {
+    text-align: center;
+    font-size: $fontSizeGr_1;
+}
+
+h4 {
+    text-align: center;
+    font-size: $fontSizeGr_2;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+a {
+    color: $colorText;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+header {
+    background-color: $colorBackgroundMain;
+}
+
+footer {
+    background-color: $colorBackgroundFooter;
+    color: $colorText;
+    padding: $paddingGr;
+    height: $sizeFooter;
+    p {
+        font-size: $fontSizeGr_2;
+        text-align: center;
+        margin: 0;
+    }
+    @include mobile {
+        font-size: $fontSizeSm;
+    }
+}
+
+.main-banner {
+    background: url('../images/fondoppal.webp');
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: $paddingGr;
+    font-size: $fontSizeXl;
+
+    
+}
+.main-titulo {
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.main-content {
+    background: url('../images/fondoppalinv.webp');
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: $paddingGr;
+    font-size: $fontSizeXl;
+    margin-bottom: $marginGr;
+
+    @include tablet {
+        p {
+            font-size: $fontSizeGr_1;
+        }
+    }
+    @include mobile {
+        p {
+            font-size: $fontSizeMd;
+        }
+    }
+}
+
+.prod-link {
+    padding: $paddingGr;
+    background-color: $colorBackgroundFooter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: $marginGr;
+
+    a {
+        color: $colorText;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold;
+
+        &:hover {
+            border-bottom: $underLine solid $colorText;
+        }
+    }
+}
+
+.textBold {
+    font-weight: bold;
+}
