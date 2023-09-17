@@ -50,7 +50,7 @@ function funActCarrito() {
     let html;
     productosCarritoSeleccionados.innerHTML = '';
     if (carrito && carrito.length > 0) {
-        
+
         const carritoSinDuplicados = [...new Set(carrito)];
         carritoSinDuplicados.forEach((item) => {
 
@@ -81,7 +81,7 @@ function funActCarrito() {
         `;
         productosCarritoSeleccionados.innerHTML = html;
     }
-    
+
     //Precio Total
     productosPrecioTotal.innerHTML = calcularTotal();
 };
@@ -108,7 +108,7 @@ function confirmaCompra() {
     localStorage.setItem("carrito", JSON.stringify(carrito));
     funActCarrito();
     localStorage.clear();
-    //setTimeout ("redireccionar()", 2500);
+    setTimeout("redireccionar()", 2500);
 };
 
 //Guardo carrito en LS
@@ -123,13 +123,13 @@ function funUploadCarritoLS() {
     }
 };
 
-function verificoFormulario(){
+function verificoFormulario() {
     const formNombre = document.querySelector('#form-nombre').value;
     const formApellido = document.querySelector('#form-apellido').value;
     const formCorreo = document.querySelector('#form-correo').value;
     const formTelefono = document.getElementById('form-telefono').value;
 
-    if (formNombre && formApellido && formCorreo && formTelefono){
+    if (formNombre && formApellido && formCorreo && formTelefono) {
         confirmaCompra();
     } else {
         Swal.fire({
@@ -138,7 +138,7 @@ function verificoFormulario(){
         })
     }
 };
-function redireccionar(){window.location="../pages/productos.html";}
+function redireccionar() { window.location = "../pages/productos.html"; }
 
 
 // Función main
