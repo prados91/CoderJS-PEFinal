@@ -3,120 +3,140 @@
         "id": 1,
         "nombre": "Camiseta Boston Celtics",
         "imagen": "bc-camiseta.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Boston"
     },
     {
         "id": 2,
         "nombre": "Pantalón Boston Celtics",
         "imagen": "bc-pantalon.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Boston"
     },
     {
         "id": 3,
         "nombre": "Buzo Boston Celtics",
         "imagen": "bc-buzo.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Boston"
     },
     {
         "id": 4,
         "nombre": "Gorra Boston Celtics",
         "imagen": "bc-gorra.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Boston"
     },
     {
         "id": 5,
         "nombre": "Camiseta Chicago Bulls",
         "imagen": "cb-camiseta.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Chicago"
     },
     {
         "id": 6,
         "nombre": "Pantalón Chicago Bulls",
         "imagen": "cb-pantalon.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Chicago"
     },
     {
         "id": 7,
         "nombre": "Buzo Chicago Bulls",
         "imagen": "cb-buzo.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Chicago"
     },
     {
         "id": 8,
         "nombre": "Gorra Chicago Bulls",
         "imagen": "cb-gorra.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Chicago"
     },
     {
         "id": 9,
         "nombre": "Camiseta Lakers",
         "imagen": "la-camiseta.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Lakers"
     },
     {
         "id": 10,
         "nombre": "Pantalón Lakers",
         "imagen": "la-pantalon.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Lakers"
     },
     {
         "id": 11,
         "nombre": "Buzo Lakers",
         "imagen": "la-buzo.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Lakers"
     },
     {
         "id": 12,
         "nombre": "Gorra Lakers",
         "imagen": "la-gorra.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Lakers"
     },
     {
         "id": 13,
         "nombre": "Camiseta Spurs",
         "imagen": "sa-camiseta.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Spurs"
     },
     {
         "id": 14,
         "nombre": "Pantalón Spurs",
         "imagen": "sa-pantalon.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Spurs"
     },
     {
         "id": 15,
         "nombre": "Buzo Spurs",
         "imagen": "sa-buzo.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Spurs"
     },
     {
         "id": 16,
         "nombre": "Gorra Spurs",
         "imagen": "sa-gorra.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Spurs"
     },
     {
         "id": 17,
         "nombre": "Camiseta Warriors",
         "imagen": "gs-camiseta.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Warriors"
     },
     {
         "id": 18,
         "nombre": "Pantalón Warriors",
         "imagen": "gs-pantalon.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Warriors"
     },
     {
         "id": 19,
         "nombre": "Buzo Warriors",
         "imagen": "gs-buzo.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Warriors"
     },
     {
         "id": 20,
         "nombre": "Gorra Warriors",
         "imagen": "gs-gorra.jpg",
-        "precio": 1000
+        "precio": 1000,
+        "equipo": "Warriors"
     }
 ]

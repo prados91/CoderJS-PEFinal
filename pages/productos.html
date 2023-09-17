@@ -43,7 +43,8 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link active textBold" href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link active textBold" href="./productos.html">Productos</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="./nosotros.html">Quiénes somos</a></li>
                         <li class="nav-item"><a class="nav-link" href="./preguntas.html">Preguntas frecuentes</a>
                         </li>
@@ -58,12 +59,30 @@
 
         <!--Sección: Banner principal-->
         <section class="main-banner">
-            <h1>Productos de la tienda</h1>
-            
-            <button class="btnVerCarrito" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
-                    class="bi bi-cart"></i>  Ver Carrito</button>
-
+            <div>
+                <h1>Productos de la tienda</h1>
+            </div>
+            <div>
+                <button class="btnVerCarrito" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                        class="bi bi-cart"></i> Ver Carrito</button>
+            </div>
+            <div>
+        </section>
+        <section>
+            <div class="row main-filter">
+                <ul class="d-flex flex-row flex-wrap">
+                    <li><input type="checkbox" id="filter-bc" /><label for="filter-bc">Boston Celtics</label></li>
+                    <li><input type="checkbox" id="filter-cb" /><label for="filter-cb">Chicago Bulls</label></li>
+                    <li><input type="checkbox" id="filter-la" /><label for="filter-la">LA Lakers</label></li>
+                    <li><input type="checkbox" id="filter-sa" /><label for="filter-sa">SA Spurs</label></li>
+                    <li><input type="checkbox" id="filter-gs" /><label for="filter-gs">GS Warriors</label></li>
+                    <li><input type="checkbox" id="filter-todos" checked="true" /><label for="filter-todos">Ver todos</label></li>
+                </ul>
+            </div>
+        </section>
+        <!--CARRITO -->
+        <section>
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div class="offcanvas-header">
@@ -83,11 +102,12 @@
                             <p class="text-right">Total: $ <span id="productos-precio-total"></span></p>
                         </div>
                         <div class="row">
-                            <!-- <button id="productos-btn-comprar" class="btnConfirmar hidden">Confirmar compra</button>-->
-                            <a id="productos-btn-comprar" href="./formulario.html" class="btnConfirmar">Confirmar compra</a>
+                            <a id="productos-btn-comprar" href="./formulario.html" class="btnConfirmar">Confirmar
+                                compra</a>
                         </div>
                         <div class="row">
-                            <button id="productos-btn-vaciar" class="btnVaciar hidden"><i class="bi bi-cart-x-fill"></i>  Vaciar</button>
+                            <button id="productos-btn-vaciar" class="btnVaciar hidden"><i class="bi bi-cart-x-fill"></i>
+                                Vaciar</button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +116,7 @@
 
         <!-- Link a whatsapp -->
         <section class="main-whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=5491162065973" target="_blank"><img
+            <a href="https://api.whatsapp.com/send?phone=5491124752671" target="_blank"><img
                     src="../images/logo-whatsapp.png" alt="Logo de WhatsApp" /></a>
         </section>
 

@@ -1,17 +1,18 @@
 // Constructor de objetos.
 class Producto {
-    constructor(id, nombre, imagen, precio) {
+    constructor(id, nombre, imagen, precio, equipo) {
         this.id = id;
         this.nombre = nombre;
         this.imagen = imagen;
         this.precio = parseFloat(precio);
+        this.equipo = equipo;
     }
 }
 //leo db Local
 const getDBProductosJSON = async (url) => {
     const response = await fetch(url);
     const data = await response.json();
-    data.forEach((x) => productosTiendaBS.push(new Producto(x.id, x.nombre, x.imagen, x.precio)));
+    data.forEach((x) => productosTiendaBS.push(new Producto(x.id, x.nombre, x.imagen, x.precio, x.equipo)));
 };
 //Eventos
 const productosItems = document.querySelector('#productos-items');
@@ -184,6 +185,88 @@ function funUploadCarritoLS() {
         carrito = JSON.parse(productosCarritoLS.getItem('carrito'));
     }
 };
+
+function filtrarProductos(arr, filtro) {
+    if (filtro != "todos" ) {
+        let equipoFiltrado = arr.filter(array => array.equipo === filtro);
+        mostrarProductosDom(equipoFiltrado)
+    } else {
+        mostrarProductosDom(arr)
+    }
+};
+
+const filterBoston = document.getElementById("filter-bc");
+filterBoston.onclick = () => {
+    const filtro = "Boston";
+    filterTodos.checked = false;
+    filterBoston.checked = true;
+    filterChicago.checked = false;
+    filterLakers.checked = false;
+    filterSpurs.checked = false;
+    filterWarriors.checked = false;
+    filtrarProductos(productosTiendaBS, filtro);
+};
+const filterChicago = document.getElementById("filter-cb");
+filterChicago.onclick = () => {
+    const filtro = "Chicago";
+    filterTodos.checked = false;
+    filterBoston.checked = false;
+    filterChicago.checked = true;
+    filterLakers.checked = false;
+    filterSpurs.checked = false;
+    filterWarriors.checked = false;
+    filtrarProductos(productosTiendaBS, filtro);
+};
+
+const filterLakers = document.getElementById("filter-la");
+filterLakers.onclick = () => {
+    const filtro = "Lakers";
+    filterTodos.checked = false;
+    filterBoston.checked = false;
+    filterChicago.checked = false;
+    filterLakers.checked = true;
+    filterSpurs.checked = false;
+    filterWarriors.checked = false;
+    filtrarProductos(productosTiendaBS, filtro);
+};
+
+const filterSpurs = document.getElementById("filter-sa");
+filterSpurs.onclick = () => {
+    const filtro = "Spurs";
+    filterTodos.checked = false;
+    filterBoston.checked = false;
+    filterChicago.checked = false;
+    filterLakers.checked = false;
+    filterSpurs.checked = true;
+    filterWarriors.checked = false;
+    filtrarProductos(productosTiendaBS, filtro);
+};
+
+const filterWarriors = document.getElementById("filter-gs");
+filterWarriors.onclick = () => {
+    const filtro = "Warriors";
+    filterTodos.checked = false;
+    filterBoston.checked = false;
+    filterChicago.checked = false;
+    filterLakers.checked = false;
+    filterSpurs.checked = false;
+    filterWarriors.checked = true;
+    filtrarProductos(productosTiendaBS, filtro);
+};
+
+const filterTodos = document.getElementById("filter-todos");
+filterTodos.onclick = () => {
+    const filtro = "todos";
+    filterTodos.checked = true;
+    filterBoston.checked = false;
+    filterChicago.checked = false;
+    filterLakers.checked = false;
+    filterSpurs.checked = false;
+    filterWarriors.checked = false;
+    filtrarProductos(productosTiendaBS, filtro);
+};
+
+
 
 // Función main
 const main = async () => {
